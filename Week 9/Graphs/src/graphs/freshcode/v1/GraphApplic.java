@@ -118,6 +118,35 @@ public class GraphApplic extends Graph {
 		return vert;
 	}
 
+	public Integer breadthFirstTraversalSecondLastVertex(Integer v)
+	// PRE: Graph is connected, v is the id of a vertex in the graph
+	// POST: returns the second-last vertex encountered during a
+	// breadth-first traversal
+	{
+		Queue<Integer> q = new LinkedList<Integer>();
+		int vert = v;
+		VertexIDList adjList;
+		q.add(v);
+		getVertex(v).setMarked();
+		while (!q.isEmpty()) {
+			v = q.poll();
+			adjList = getVertex(v).getAdjs();
+			// the list of nodes adjacent to node at the front of the queue
+			Iterator<Integer> vIt = adjList.iterator();
+			while (vIt.hasNext()) {
+				Integer u = vIt.next();
+				if (!getVertex(u).isMarked()) {
+					q.add(u);
+					vert = u;
+					getVertex(u).setMarked();
+
+				}
+			}
+		}
+
+		return vert;
+	}
+
 	public void depthFirstTraversalIter1(Integer v) {
 		// PRE: v is the id of a vertex in the graph
 		// POST: Prints out a depth-first traversal of a graph
