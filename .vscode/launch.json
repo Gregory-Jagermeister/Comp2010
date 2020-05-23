@@ -1,0 +1,119 @@
+{
+  // Use IntelliSense to learn about possible attributes.
+  // Hover to view descriptions of existing attributes.
+  // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "type": "java",
+      "name": "Debug (Launch) - Current File",
+      "request": "launch",
+      "mainClass": "${file}"
+    },
+    {
+      "type": "java",
+      "name": "Debug (Launch)-BTree<AdvTrees>",
+      "request": "launch",
+      "mainClass": "freshcode.BTree",
+      "projectName": "AdvTrees"
+    },
+    {
+      "type": "java",
+      "name": "Debug (Launch)-LLTest<COMP225Week1>",
+      "request": "launch",
+      "mainClass": "lectures.LLTest",
+      "projectName": "COMP225Week1"
+    },
+    {
+      "type": "java",
+      "name": "Debug (Launch)-StopWatch<COMP225Week1>",
+      "request": "launch",
+      "mainClass": "lectures.StopWatch",
+      "projectName": "COMP225Week1"
+    },
+    {
+      "type": "java",
+      "name": "Debug (Launch)-ComputingPowers<COMP225Week2>",
+      "request": "launch",
+      "mainClass": "lectures.ComputingPowers",
+      "projectName": "COMP225Week2"
+    },
+    {
+      "type": "java",
+      "name": "Debug (Launch)-testWidgets<COMP225Week2>",
+      "request": "launch",
+      "mainClass": "lectures.testWidgets",
+      "projectName": "COMP225Week2"
+    },
+    {
+      "type": "java",
+      "name": "Debug (Launch)-Graph<Graphs>",
+      "request": "launch",
+      "mainClass": "graphs.freshcode.v1.Graph",
+      "projectName": "Graphs"
+    },
+    {
+      "type": "java",
+      "name": "Debug (Launch)-GraphApplic<Graphs>",
+      "request": "launch",
+      "mainClass": "graphs.freshcode.v1.GraphApplic",
+      "projectName": "Graphs"
+    },
+    {
+      "type": "java",
+      "name": "Debug (Launch)-Vertex<Graphs>",
+      "request": "launch",
+      "mainClass": "graphs.freshcode.v1.Vertex",
+      "projectName": "Graphs"
+    },
+    {
+      "type": "java",
+      "name": "Debug (Launch)-VertexIDList<Graphs>",
+      "request": "launch",
+      "mainClass": "graphs.freshcode.v1.VertexIDList",
+      "projectName": "Graphs"
+    },
+    {
+      "type": "java",
+      "name": "Debug (Launch)-Heap<PQplusHeapBundle>",
+      "request": "launch",
+      "mainClass": "pqheap.student.Heap",
+      "projectName": "PQplusHeapBundle"
+    },
+    {
+      "type": "java",
+      "name": "Debug (Launch)-PQexDict3<PQplusHeapBundle>",
+      "request": "launch",
+      "mainClass": "pqheap.student.PQexDict3",
+      "projectName": "PQplusHeapBundle"
+    },
+    {
+      "type": "java",
+      "name": "Debug (Launch)-PQlec1<PQplusHeapBundle>",
+      "request": "launch",
+      "mainClass": "pqheap.student.PQlec1",
+      "projectName": "PQplusHeapBundle"
+    },
+    {
+      "type": "java",
+      "name": "Debug (Launch)-PQlec1a<PQplusHeapBundle>",
+      "request": "launch",
+      "mainClass": "pqheap.student.PQlec1a",
+      "projectName": "PQplusHeapBundle"
+    },
+    {
+      "type": "java",
+      "name": "Debug (Launch)-PQlec2<PQplusHeapBundle>",
+      "request": "launch",
+      "mainClass": "pqheap.student.PQlec2",
+      "projectName": "PQplusHeapBundle"
+    },
+    {
+      "type": "java",
+      "name": "Debug (Launch)-PQlec2a<PQplusHeapBundle>",
+      "request": "launch",
+      "mainClass": "pqheap.student.PQlec2a",
+      "projectName": "PQplusHeapBundle"
+    }
+  ]
+}

@@ -12,7 +12,7 @@ public class GraphApplic extends Graph {
 		// Recursive version of DFT
 		System.out.print(" " + v);
 		getVertex(v).setMarked(); // get vertex object with id v,
-									// indicate visited by setting marked
+		// indicate visited by setting marked
 		VertexIDList adjList = getVertex(v).getAdjs();
 		// get adjacency list representing neighbours
 		Iterator<Integer> vIt = adjList.iterator();
@@ -32,7 +32,7 @@ public class GraphApplic extends Graph {
 		List<Integer> resList = new Vector<Integer>(); // list to hold DFT
 
 		getVertex(v).setMarked(); // get vertex object with id v,
-									// indicate visited by setting marked
+		// indicate visited by setting marked
 		VertexIDList adjList = getVertex(v).getAdjs();
 		// get adjacency list representing neighbours
 		Iterator<Integer> vIt = adjList.iterator();
@@ -125,6 +125,7 @@ public class GraphApplic extends Graph {
 	{
 		Queue<Integer> q = new LinkedList<Integer>();
 		int vert = v;
+		int lastVert = v;
 		VertexIDList adjList;
 		q.add(v);
 		getVertex(v).setMarked();
@@ -136,14 +137,21 @@ public class GraphApplic extends Graph {
 			while (vIt.hasNext()) {
 				Integer u = vIt.next();
 				if (!getVertex(u).isMarked()) {
+
 					q.add(u);
-					vert = u;
+
+					if (!vIt.hasNext()) {
+						vert = u;
+					} else {
+						vert = lastVert;
+					}
+					lastVert = vert;
 					getVertex(u).setMarked();
 
 				}
 			}
-		}
 
+		}
 		return vert;
 	}
 
@@ -212,6 +220,11 @@ public class GraphApplic extends Graph {
 
 		System.out.println("BFT #2");
 		System.out.println(g.breadthFirstTraversalLastVertex(g.getFirstVertexID()));
+		g.setUnmarked();
+		System.out.println();
+
+		System.out.println("BFT #3");
+		System.out.println(g.breadthFirstTraversalSecondLastVertex(g.getFirstVertexID()));
 		g.setUnmarked();
 		System.out.println();
 
